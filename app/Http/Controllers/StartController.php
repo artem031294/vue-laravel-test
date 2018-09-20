@@ -23,4 +23,18 @@ class StartController extends Controller
            'url_data' => $url_data
         ]);
     }
+
+    public function getJson()
+    {
+        return [
+            array(
+                'title' => "Google",
+                'url' => 'https://google.com'
+            ),
+            array(
+                'title' => 'Yandex',
+                'url' => 'https://ya.ru'
+            )
+        ];
+    }
 }
